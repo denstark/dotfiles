@@ -14,6 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'sheerun/vim-polyglot'
 
 
 
