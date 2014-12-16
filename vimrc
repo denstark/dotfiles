@@ -16,6 +16,8 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'sheerun/vim-polyglot'
 
+"" Color
+NeoBundle 'tomasr/molokai'
 
 
 call neobundle#end()
@@ -47,6 +49,8 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+"Colors
+colorscheme molokai
 
 
 "Keybinds
