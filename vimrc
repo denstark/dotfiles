@@ -13,6 +13,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " You must add a submodule line to .gitmodules for each bundle
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'bling/vim-airline'
 
 
 
@@ -20,6 +21,9 @@ call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 
+" Neobundle configs
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
 " Turn on syntax
 syntax on
 
