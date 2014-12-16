@@ -10,6 +10,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 "List of Bundles here:
+" You must add a submodule line to .gitmodules for each bundle
 NeoBundle 'scrooloose/nerdtree'
 
 
