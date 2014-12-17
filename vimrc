@@ -51,7 +51,7 @@ set softtabstop=2
 set expandtab
 
 "Colors
-colorscheme molokai
+colorscheme 0x7A69_dark
 
 
 "Keybinds
