@@ -28,6 +28,10 @@ NeoBundleCheck
 " Neobundle configs
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
+
+" ctrlp
+let g:ctrlp_working_path_mode = 'ra'
+
 " Turn on syntax
 syntax on
 
