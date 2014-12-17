@@ -1,2 +1,3 @@
 # vi:syntax=sh
-alias ls="ls -alh --color"
+alias ll="ls -alh --color"
+alias ls="ls --color"
