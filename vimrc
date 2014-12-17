@@ -16,7 +16,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'scrooloose/syntastic'
-
+NeoBundle 'flazz/vim-colorschemes'
 "" Color
 NeoBundle 'tomasr/molokai'
 
