@@ -4,30 +4,42 @@
 set nocompatible
 
 
-"required for neobundle
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
+"required for Plug
+call plug#begin()
 
 "List of Bundles here:
-" You must add a submodule line to .gitmodules for each bundle
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'sheerun/vim-polyglot'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'flazz/vim-colorschemes'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'sheerun/vim-polyglot'
+Plug 'scrooloose/syntastic'
+Plug 'flazz/vim-colorschemes'
+Plug 'jceb/vim-orgmode'
+Plug 'kamykn/spelunker.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'sickill/vim-pasta'
 "" Color
-NeoBundle 'tomasr/molokai'
+Plug 'tomasr/molokai'
+
+call plug#end()
+
+" Clipboard
+set clipboard=unnamed
+set clipboard+=unnamedplus
+
+" Set mouse mode
+set mouse=a
 
 
-call neobundle#end()
 filetype plugin indent on
-NeoBundleCheck
 
-" Neobundle configs
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
+
+" Spell Checking
+setlocal spell spelllang=en_us
+let g:spelunker_check_type = 2
+set nospell " turn off by default
 
 " ctrlp
 let g:ctrlp_working_path_mode = 'ra'
@@ -55,9 +67,10 @@ set softtabstop=2
 set expandtab
 
 "Colors
-colorscheme 0x7A69_dark
+colorscheme molokai
 
 
 "Keybinds
 
 map <C-n> :NERDTreeToggle<CR>
+map <F2> :put =strftime('%FT%T%z')<CR>

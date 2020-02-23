@@ -8,5 +8,7 @@ shopt -s nocaseglob
 shopt -s histappend
 
 export PS1="\u@\h :: {\w} :: \$?\n\$ "
-
 source ~/.aliases
+if [ -f ~/.bashrc.local ]; then
+  source ~/.bashrc.local
+fi
