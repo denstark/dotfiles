@@ -14,3 +14,6 @@ ln -sfn ${dotfiles_dir}/aliases ~/.aliases
 
 ln -sfn ${dotfiles_dir}/vimrc ~/.vimrc
 ln -sfn ${dotfiles_dir}/.vim ~/.vim
+
+# tmux
+ln -sfn ${dotfiles_dir}/tmux.conf ~/.tmux.conf
