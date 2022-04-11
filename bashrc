@@ -4,6 +4,9 @@
 # Add a timestamp to each command.
 export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
 
+# Add user bin dir to PATH
+export PATH=$PATH:~/bin
+
 # Use case-insensitive filename globbing
 shopt -s nocaseglob
 

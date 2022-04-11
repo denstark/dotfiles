@@ -15,7 +15,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
 Plug 'jceb/vim-orgmode'
-Plug 'kamykn/spelunker.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'sickill/vim-pasta'
 "" Color
