@@ -20,7 +20,7 @@ shopt -s checkwinsize
 # Enable bash completion.
 [ -f /etc/bash_completion ] && . /etc/bash_completion
 
-export PS1="\u@\h :: {\w} :: \$?\n\$ "
+export PS1="\e[1;32m\u@\h\e[m :: \e[1;34m{\w}\e[m :: \$?\n\$ "
 source ~/.aliases
 [ -f ~/.bashrc.local ] && . ~/.bashrc.local
 
