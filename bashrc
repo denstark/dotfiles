@@ -5,7 +5,7 @@
 export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
 
 # Add user bin dir to PATH
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/.local/bin
 
 # Use case-insensitive filename globbing
 shopt -s nocaseglob
