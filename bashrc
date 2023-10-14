@@ -1,6 +1,7 @@
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
+export EDITOR=vim
 # Add a timestamp to each command.
 export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
 
