@@ -15,5 +15,11 @@ ln -sfn ${dotfiles_dir}/aliases ~/.aliases
 ln -sfn ${dotfiles_dir}/vimrc ~/.vimrc
 ln -sfn ${dotfiles_dir}/.vim ~/.vim
 
+echo "Once vim is launched, run :PlugInstall to download the vim plugins"
+
 # tmux
 ln -sfn ${dotfiles_dir}/tmux.conf ~/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+
+echo "Launch tmux and hit prefix-I (capital i) to fetch any plugins"

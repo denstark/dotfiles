@@ -2,5 +2,5 @@
 alias ll="ls -alh --color"
 alias ls="ls --color"
 alias cul="docker compose up -d; docker compose logs -f"
-alias bs="cd /home/tstella/repos/bootstrap/"
+alias bs="cd /home/tstella/repos/bootstrap/$(hostname -s ) 2> /dev/null || cd /home/tstella/repos/bootstrap/"
 alias network="vim /home/tstella/repos/bootstrap/network"
