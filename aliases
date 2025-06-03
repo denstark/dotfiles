@@ -6,3 +6,4 @@ alias bs="cd /home/tstella/repos/bootstrap/$(hostname -s ) 2> /dev/null || cd /h
 alias network="vim /home/tstella/repos/bootstrap/network"
 alias pacman="sudo pacman"
 alias dnf="sudo dnf"
+alias apk="sudo apk"
