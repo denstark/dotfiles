@@ -40,4 +40,4 @@ if grep -qE "(Microsoft|WSL)" /proc/version &>/dev/null; then
     #   Requires: https://docs.docker.com/docker-for-windows/install/
     export DOCKER_HOST=tcp://localhost:2375
 fi
-eval "$(zoxide init bash)"
+eval "$(zoxide init --cmd cd bash)"
