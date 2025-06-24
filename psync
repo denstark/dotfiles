@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# A script to install some packages you'll want on the system
+
+
+base_pkgs_file="pkgs/base"
+
+sudo pacman -Sy
+sudo pacman -S - < ${base_pkgs_file}
