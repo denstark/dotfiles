@@ -6,9 +6,13 @@ dotfiles_dir=`pwd`
 
 # bash
 
+# Grab bash preexec:
+curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh
+
 ln -sfn ${dotfiles_dir}/bash_profile ~/.bash_profile
 ln -sfn ${dotfiles_dir}/bashrc ~/.bashrc
 ln -sfn ${dotfiles_dir}/aliases ~/.aliases
+
 
 # Vim
 
