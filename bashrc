@@ -48,4 +48,4 @@ eval "$(zoxide init --cmd cd bash)"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 
 # Atuin
-eval "$(atuin init bash)"
+eval "$(atuin init bash --disable-up-arrow)"
