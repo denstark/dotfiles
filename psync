@@ -3,7 +3,68 @@
 # A script to install some packages you'll want on the system
 
 
-base_pkgs_file="pkgs/base"
 
-sudo pacman -Sy
-sudo pacman -S - < ${base_pkgs_file}
+base_pkgs_file="pkgs/base"
+graphical_pkgs_file="pkgs/graphical"
+aur_pkgs_file="pkgs/aur"
+
+sync_pacman() {
+  sudo pacman -Sy
+}
+
+install_base () {
+  sync_pacman
+  sudo pacman -S - < ${base_pkgs_file}
+}
+
+install_graphical() {
+  sync_pacman
+  sudo pacman -S - < ${graphical_pkgs_file}
+}
+
+install_yay() {
+  sync_pacman
+  sudo pacman -S --needed git base-devel
+  mkdir ~/tmp
+  git clone https://aur.archlinux.org/yay.git ~/tmp/yay
+  cd ~/tmp/yay
+  makepkg -si
+}
+
+install_aur() {
+  sudo yay -Sy - < ${aur_pkgs_file}
+}
+
+OPTSTRING="abgy"
+
+
+while getopts ${OPTSTRING} opt; do 
+  case ${opt} in
+    a) 
+      echo "Installing all..."
+      install_base
+      install_graphical
+      install_yay
+      install_aur
+      ;;
+    b)
+      echo "Installing base..."
+      install_base
+      ;;
+    g)
+      echo "Installing graphical..."
+      install_graphical
+      ;;
+    y)
+      echo "Installing yay..."
+      install_yay
+      ;;
+    u)
+      echo "Installing aur packages..."
+      install_aur
+      ;;
+  esac
+done
+
+
+
