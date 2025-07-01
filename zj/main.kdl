@@ -1,0 +1,36 @@
+layout {
+  tab name="ssh" {
+    pane size=1 borderless=true {
+        plugin location="tab-bar"
+    }
+
+    pane  split_direction="vertical" {
+      pane {
+        name "umaro"
+        command "ssh"
+        args "umaro"
+      }
+      pane { 
+        name "li"
+        command "ssh"
+        args "li"
+      }
+    }
+    pane split_direction="vertical" {
+      pane {
+        name "cu" 
+        command "ssh"
+        args "cu"
+      }
+      pane {
+        name "sshs"
+        command "sshs"
+        args "-c" "/home/tstella/.ssh/config"
+      }
+    }
+
+    pane size=1 borderless=true {
+        plugin location="status-bar"
+    }
+  }
+}
